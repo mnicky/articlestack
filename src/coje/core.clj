@@ -1,6 +1,10 @@
 (ns coje.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(def saved (atom :initial_value))
+
+(defn default-web-handler
+  ""
+  [req]
+  {:status 200
+   :headers {}
+   :body (pr-str @saved)})
