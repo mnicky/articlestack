@@ -1,5 +1,5 @@
 (ns immutant.init
-  (:use coje.core)
+  (:use articlestack.core)
   (:require [immutant.messaging :as messaging]
             [immutant.web :as web]
             [immutant.util :as util]))
@@ -16,8 +16,8 @@
 ; (web/start "/foo" a-different-ring-handler)
 
 ;; To start a Noir app:
-; (server/load-views (util/app-relative "src/coje/core/views"))
-; (web/start "/" (server/gen-handler {:mode :dev :ns 'coje}))
+; (server/load-views (util/app-relative "src/articlestack/core/views"))
+; (web/start "/" (server/gen-handler {:mode :dev :ns 'articlestack}))
 
 ;; Messaging allows for starting (and stopping) destinations (queues & topics)
 ;; and listening for messages on a destination.

@@ -1,4 +1,4 @@
-(ns coje.core)
+(ns articlestack.core)
 
 (def saved (atom :initial_value))
 

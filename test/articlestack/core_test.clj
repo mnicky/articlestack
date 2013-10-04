@@ -1,6 +1,6 @@
-(ns coje.core-test
+(ns articlestack.core-test
   (:require [clojure.test :refer :all]
-            [coje.core :refer :all]))
+            [articlestack.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
